@@ -2,7 +2,7 @@ package main;
 
 import java.util.*;
 
-public class Main {
+public class Merge_Two_Sorted_Arrays_06 {
 
 
 	public static void main(String[] args) {
@@ -18,6 +18,8 @@ public class Main {
 	}
 	public static int[] mergeSortedArray(int[] A, int[] B) {
 		// write your code here
+		//目前在本地能跑，但是在lintcode运行仍报错
+		//思路 大体：将一个数组插入另一个数组，由于数组的长度不好for控制，所以采用list
 		int la = A.length;
 		int lb = B.length;
 		int s[] = new int[la+lb];
